@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lystia</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div class="brand">
+          <img src="icons/icon-32.png" width="32" height="32" alt="" />
+          <span>lystia</span>
+        </div>
+        <button id="logout-button" class="text-button hidden" type="button">Esci</button>
+      </header>
+
+      <section id="loading-view" class="view centered" aria-live="polite">
+        <span class="spinner" aria-hidden="true"></span>
+        <p>Carico Lystia…</p>
+      </section>
+
+      <section id="login-view" class="view hidden">
+        <p class="eyebrow">Il tuo spazio dei desideri</p>
+        <h1>Accedi a Lystia</h1>
+        <p class="intro">Collega l’estensione per salvare il prodotto che stai guardando.</p>
+        <form id="login-form" class="stack">
+          <label>
+            <span>Email</span>
+            <input id="email" name="email" type="email" autocomplete="username" required />
+          </label>
+          <label>
+            <span>Password</span>
+            <input id="password" name="password" type="password" autocomplete="current-password" required />
+          </label>
+          <p id="login-error" class="error hidden" role="alert"></p>
+          <button id="login-button" class="primary-button" type="submit">Accedi</button>
+        </form>
+        <div class="account-links">
+          <button id="forgot-password" class="text-button" type="button">Password dimenticata?</button>
+          <button id="register" class="text-button" type="button">Crea un account</button>
+        </div>
+      </section>
+
+      <section id="unsupported-view" class="view hidden centered">
+        <div class="empty-icon">↗</div>
+        <h1>Apri una pagina prodotto</h1>
+        <p>Lystia può importare prodotti da pagine web con indirizzo HTTP o HTTPS.</p>
+      </section>
+
+      <section id="empty-view" class="view hidden centered">
+        <div class="empty-icon">♡</div>
+        <h1>Crea la tua prima wishlist</h1>
+        <p>Per salvare questo prodotto ti serve almeno una wishlist attiva.</p>
+        <button id="create-wishlist" class="primary-button" type="button">Apri Lystia</button>
+      </section>
+
+      <section id="editor-view" class="view hidden">
+        <div class="page-context">
+          <img id="page-favicon" width="22" height="22" alt="" />
+          <div>
+            <p id="page-host"></p>
+            <p id="page-title"></p>
+          </div>
+        </div>
+
+        <div id="import-status" class="import-status" aria-live="polite">
+          <span class="spinner small" aria-hidden="true"></span>
+          <span>Importo i dettagli del prodotto…</span>
+        </div>
+        <p id="import-warning" class="warning hidden" role="status"></p>
+
+        <form id="wish-form" class="stack compact">
+          <label>
+            <span>Wishlist</span>
+            <select id="wishlist" required></select>
+          </label>
+
+          <label>
+            <span>Nome del desiderio</span>
+            <input id="title" maxlength="160" required />
+          </label>
+
+          <div class="field-row">
+            <label class="grow">
+              <span>Prezzo</span>
+              <input id="price" inputmode="decimal" placeholder="0,00" />
+            </label>
+            <label class="currency-field">
+              <span>Valuta</span>
+              <select id="currency">
+                <option>EUR</option>
+                <option>USD</option>
+                <option>GBP</option>
+                <option>CHF</option>
+                <option>CAD</option>
+                <option>AUD</option>
+                <option>JPY</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            <span>Negozio</span>
+            <input id="store-name" maxlength="160" />
+          </label>
+
+          <label>
+            <span>Descrizione <small>facoltativa</small></span>
+            <textarea id="description" rows="3"></textarea>
+          </label>
+
+          <div id="image-panel" class="image-panel hidden">
+            <span class="field-label">Immagine</span>
+            <div id="image-options" class="image-options"></div>
+          </div>
+
+          <p id="save-error" class="error hidden" role="alert"></p>
+          <button id="save-button" class="primary-button" type="submit">Aggiungi alla wishlist</button>
+        </form>
+      </section>
+
+      <section id="success-view" class="view hidden centered">
+        <div class="success-icon">✓</div>
+        <h1>Desiderio aggiunto</h1>
+        <p id="success-message"></p>
+        <button id="close-button" class="primary-button" type="button">Fatto</button>
+      </section>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

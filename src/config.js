@@ -1,0 +1,1 @@
+export const LYSTIA_WEB_ORIGIN = "__LYSTIA_WEB_ORIGIN__";

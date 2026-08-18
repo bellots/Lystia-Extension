@@ -1,0 +1,999 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A11EC063034EA7C000E0A7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11EC053034EA7C000E0A7A /* AppDelegate.swift */; };
+		6A11EC083034EA7C000E0A7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11EC073034EA7C000E0A7A /* SceneDelegate.swift */; };
+		6A11EC0B3034EA7C000E0A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC093034EA7C000E0A7A /* LaunchScreen.storyboard */; };
+		6A11EC0E3034EA7C000E0A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC0C3034EA7C000E0A7A /* Main.storyboard */; };
+		6A11EC173034EA7C000E0A7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11EC163034EA7C000E0A7A /* AppDelegate.swift */; };
+		6A11EC1A3034EA7C000E0A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC183034EA7C000E0A7A /* Main.storyboard */; };
+		6A11EC213034EA7C000E0A7A /* Lystia Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6A11EC203034EA7C000E0A7A /* Lystia Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6A11EC2B3034EA7C000E0A7A /* Lystia Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6A11EC2A3034EA7C000E0A7A /* Lystia Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6A11EC303034EA7C000E0A7A /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EBF53034EA7B000E0A7A /* Main.html */; };
+		6A11EC313034EA7C000E0A7A /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EBF53034EA7B000E0A7A /* Main.html */; };
+		6A11EC323034EA7C000E0A7A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EBF73034EA7B000E0A7A /* Icon.png */; };
+		6A11EC333034EA7C000E0A7A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EBF73034EA7B000E0A7A /* Icon.png */; };
+		6A11EC343034EA7C000E0A7A /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EBF83034EA7B000E0A7A /* Style.css */; };
+		6A11EC353034EA7C000E0A7A /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EBF83034EA7B000E0A7A /* Style.css */; };
+		6A11EC363034EA7C000E0A7A /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EBF93034EA7B000E0A7A /* Script.js */; };
+		6A11EC373034EA7C000E0A7A /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EBF93034EA7B000E0A7A /* Script.js */; };
+		6A11EC383034EA7C000E0A7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11EBFA3034EA7B000E0A7A /* ViewController.swift */; };
+		6A11EC393034EA7C000E0A7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11EBFA3034EA7B000E0A7A /* ViewController.swift */; };
+		6A11EC3A3034EA7C000E0A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EBFB3034EA7C000E0A7A /* Assets.xcassets */; };
+		6A11EC3B3034EA7C000E0A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EBFB3034EA7C000E0A7A /* Assets.xcassets */; };
+		6A11EC3C3034EA7C000E0A7A /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11EBFD3034EA7C000E0A7A /* SafariWebExtensionHandler.swift */; };
+		6A11EC3D3034EA7C000E0A7A /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11EBFD3034EA7C000E0A7A /* SafariWebExtensionHandler.swift */; };
+		6A11EC563034EA7D000E0A7A /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC4F3034EA7D000E0A7A /* popup.js */; };
+		6A11EC573034EA7D000E0A7A /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC503034EA7D000E0A7A /* popup.html */; };
+		6A11EC583034EA7D000E0A7A /* config.js in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC513034EA7D000E0A7A /* config.js */; };
+		6A11EC593034EA7D000E0A7A /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC523034EA7D000E0A7A /* icons */; };
+		6A11EC5A3034EA7D000E0A7A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC533034EA7D000E0A7A /* manifest.json */; };
+		6A11EC5B3034EA7D000E0A7A /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC543034EA7D000E0A7A /* lib */; };
+		6A11EC5C3034EA7D000E0A7A /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC553034EA7D000E0A7A /* popup.css */; };
+		6A11EC5D3034EA7D000E0A7A /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC4F3034EA7D000E0A7A /* popup.js */; };
+		6A11EC5E3034EA7D000E0A7A /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC503034EA7D000E0A7A /* popup.html */; };
+		6A11EC5F3034EA7D000E0A7A /* config.js in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC513034EA7D000E0A7A /* config.js */; };
+		6A11EC603034EA7D000E0A7A /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC523034EA7D000E0A7A /* icons */; };
+		6A11EC613034EA7D000E0A7A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC533034EA7D000E0A7A /* manifest.json */; };
+		6A11EC623034EA7D000E0A7A /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC543034EA7D000E0A7A /* lib */; };
+		6A11EC633034EA7D000E0A7A /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 6A11EC553034EA7D000E0A7A /* popup.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A11EC223034EA7C000E0A7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A11EBEF3034EA7B000E0A7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A11EC1F3034EA7C000E0A7A;
+			remoteInfo = "Lystia Extension (iOS)";
+		};
+		6A11EC2C3034EA7C000E0A7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A11EBEF3034EA7B000E0A7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A11EC293034EA7C000E0A7A;
+			remoteInfo = "Lystia Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6A11EC433034EA7C000E0A7A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6A11EC213034EA7C000E0A7A /* Lystia Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A11EC4A3034EA7C000E0A7A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6A11EC2B3034EA7C000E0A7A /* Lystia Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6A11EBF63034EA7B000E0A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		6A11EBF73034EA7B000E0A7A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		6A11EBF83034EA7B000E0A7A /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		6A11EBF93034EA7B000E0A7A /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		6A11EBFA3034EA7B000E0A7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A11EBFB3034EA7C000E0A7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A11EBFD3034EA7C000E0A7A /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		6A11EC023034EA7C000E0A7A /* Lystia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lystia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A11EC053034EA7C000E0A7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A11EC073034EA7C000E0A7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6A11EC0A3034EA7C000E0A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A11EC0D3034EA7C000E0A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A11EC0F3034EA7C000E0A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A11EC143034EA7C000E0A7A /* Lystia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lystia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A11EC163034EA7C000E0A7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A11EC193034EA7C000E0A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A11EC1B3034EA7C000E0A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A11EC203034EA7C000E0A7A /* Lystia Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lystia Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A11EC253034EA7C000E0A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A11EC2A3034EA7C000E0A7A /* Lystia Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lystia Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A11EC2F3034EA7C000E0A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A11EC4F3034EA7D000E0A7A /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = Resources/popup.js; sourceTree = "<group>"; };
+		6A11EC503034EA7D000E0A7A /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = Resources/popup.html; sourceTree = "<group>"; };
+		6A11EC513034EA7D000E0A7A /* config.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = config.js; path = Resources/config.js; sourceTree = "<group>"; };
+		6A11EC523034EA7D000E0A7A /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		6A11EC533034EA7D000E0A7A /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		6A11EC543034EA7D000E0A7A /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = Resources/lib; sourceTree = "<group>"; };
+		6A11EC553034EA7D000E0A7A /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = Resources/popup.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A11EBFF3034EA7C000E0A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A11EC113034EA7C000E0A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A11EC1D3034EA7C000E0A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A11EC273034EA7C000E0A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A11EBEE3034EA7B000E0A7A = {
+			isa = PBXGroup;
+			children = (
+				6A11EBF33034EA7B000E0A7A /* Shared (App) */,
+				6A11EBFC3034EA7C000E0A7A /* Shared (Extension) */,
+				6A11EC043034EA7C000E0A7A /* iOS (App) */,
+				6A11EC153034EA7C000E0A7A /* macOS (App) */,
+				6A11EC243034EA7C000E0A7A /* iOS (Extension) */,
+				6A11EC2E3034EA7C000E0A7A /* macOS (Extension) */,
+				6A11EC033034EA7C000E0A7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A11EBF33034EA7B000E0A7A /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				6A11EBFA3034EA7B000E0A7A /* ViewController.swift */,
+				6A11EBFB3034EA7C000E0A7A /* Assets.xcassets */,
+				6A11EBF43034EA7B000E0A7A /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		6A11EBF43034EA7B000E0A7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6A11EBF53034EA7B000E0A7A /* Main.html */,
+				6A11EBF73034EA7B000E0A7A /* Icon.png */,
+				6A11EBF83034EA7B000E0A7A /* Style.css */,
+				6A11EBF93034EA7B000E0A7A /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6A11EBFC3034EA7C000E0A7A /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				6A11EC4E3034EA7D000E0A7A /* Resources */,
+				6A11EBFD3034EA7C000E0A7A /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		6A11EC033034EA7C000E0A7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A11EC023034EA7C000E0A7A /* Lystia.app */,
+				6A11EC143034EA7C000E0A7A /* Lystia.app */,
+				6A11EC203034EA7C000E0A7A /* Lystia Extension.appex */,
+				6A11EC2A3034EA7C000E0A7A /* Lystia Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A11EC043034EA7C000E0A7A /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				6A11EC053034EA7C000E0A7A /* AppDelegate.swift */,
+				6A11EC073034EA7C000E0A7A /* SceneDelegate.swift */,
+				6A11EC093034EA7C000E0A7A /* LaunchScreen.storyboard */,
+				6A11EC0C3034EA7C000E0A7A /* Main.storyboard */,
+				6A11EC0F3034EA7C000E0A7A /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		6A11EC153034EA7C000E0A7A /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				6A11EC163034EA7C000E0A7A /* AppDelegate.swift */,
+				6A11EC183034EA7C000E0A7A /* Main.storyboard */,
+				6A11EC1B3034EA7C000E0A7A /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		6A11EC243034EA7C000E0A7A /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				6A11EC253034EA7C000E0A7A /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		6A11EC2E3034EA7C000E0A7A /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				6A11EC2F3034EA7C000E0A7A /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		6A11EC4E3034EA7D000E0A7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6A11EC4F3034EA7D000E0A7A /* popup.js */,
+				6A11EC503034EA7D000E0A7A /* popup.html */,
+				6A11EC513034EA7D000E0A7A /* config.js */,
+				6A11EC523034EA7D000E0A7A /* icons */,
+				6A11EC533034EA7D000E0A7A /* manifest.json */,
+				6A11EC543034EA7D000E0A7A /* lib */,
+				6A11EC553034EA7D000E0A7A /* popup.css */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A11EC013034EA7C000E0A7A /* Lystia (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A11EC443034EA7C000E0A7A /* Build configuration list for PBXNativeTarget "Lystia (iOS)" */;
+			buildPhases = (
+				6A11EBFE3034EA7C000E0A7A /* Sources */,
+				6A11EBFF3034EA7C000E0A7A /* Frameworks */,
+				6A11EC003034EA7C000E0A7A /* Resources */,
+				6A11EC433034EA7C000E0A7A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A11EC233034EA7C000E0A7A /* PBXTargetDependency */,
+			);
+			name = "Lystia (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Lystia (iOS)";
+			productReference = 6A11EC023034EA7C000E0A7A /* Lystia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A11EC133034EA7C000E0A7A /* Lystia (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A11EC4B3034EA7C000E0A7A /* Build configuration list for PBXNativeTarget "Lystia (macOS)" */;
+			buildPhases = (
+				6A11EC103034EA7C000E0A7A /* Sources */,
+				6A11EC113034EA7C000E0A7A /* Frameworks */,
+				6A11EC123034EA7C000E0A7A /* Resources */,
+				6A11EC4A3034EA7C000E0A7A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A11EC2D3034EA7C000E0A7A /* PBXTargetDependency */,
+			);
+			name = "Lystia (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Lystia (macOS)";
+			productReference = 6A11EC143034EA7C000E0A7A /* Lystia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A11EC1F3034EA7C000E0A7A /* Lystia Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A11EC403034EA7C000E0A7A /* Build configuration list for PBXNativeTarget "Lystia Extension (iOS)" */;
+			buildPhases = (
+				6A11EC1C3034EA7C000E0A7A /* Sources */,
+				6A11EC1D3034EA7C000E0A7A /* Frameworks */,
+				6A11EC1E3034EA7C000E0A7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lystia Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Lystia Extension (iOS)";
+			productReference = 6A11EC203034EA7C000E0A7A /* Lystia Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6A11EC293034EA7C000E0A7A /* Lystia Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A11EC473034EA7C000E0A7A /* Build configuration list for PBXNativeTarget "Lystia Extension (macOS)" */;
+			buildPhases = (
+				6A11EC263034EA7C000E0A7A /* Sources */,
+				6A11EC273034EA7C000E0A7A /* Frameworks */,
+				6A11EC283034EA7C000E0A7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lystia Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Lystia Extension (macOS)";
+			productReference = 6A11EC2A3034EA7C000E0A7A /* Lystia Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A11EBEF3034EA7B000E0A7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					6A11EC013034EA7C000E0A7A = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					6A11EC133034EA7C000E0A7A = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					6A11EC1F3034EA7C000E0A7A = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					6A11EC293034EA7C000E0A7A = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = 6A11EBF23034EA7B000E0A7A /* Build configuration list for PBXProject "Lystia" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A11EBEE3034EA7B000E0A7A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6A11EC033034EA7C000E0A7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A11EC013034EA7C000E0A7A /* Lystia (iOS) */,
+				6A11EC133034EA7C000E0A7A /* Lystia (macOS) */,
+				6A11EC1F3034EA7C000E0A7A /* Lystia Extension (iOS) */,
+				6A11EC293034EA7C000E0A7A /* Lystia Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A11EC003034EA7C000E0A7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A11EC323034EA7C000E0A7A /* Icon.png in Resources */,
+				6A11EC0B3034EA7C000E0A7A /* LaunchScreen.storyboard in Resources */,
+				6A11EC303034EA7C000E0A7A /* Main.html in Resources */,
+				6A11EC363034EA7C000E0A7A /* Script.js in Resources */,
+				6A11EC3A3034EA7C000E0A7A /* Assets.xcassets in Resources */,
+				6A11EC0E3034EA7C000E0A7A /* Main.storyboard in Resources */,
+				6A11EC343034EA7C000E0A7A /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A11EC123034EA7C000E0A7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A11EC333034EA7C000E0A7A /* Icon.png in Resources */,
+				6A11EC353034EA7C000E0A7A /* Style.css in Resources */,
+				6A11EC1A3034EA7C000E0A7A /* Main.storyboard in Resources */,
+				6A11EC373034EA7C000E0A7A /* Script.js in Resources */,
+				6A11EC3B3034EA7C000E0A7A /* Assets.xcassets in Resources */,
+				6A11EC313034EA7C000E0A7A /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A11EC1E3034EA7C000E0A7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A11EC623034EA7D000E0A7A /* lib in Resources */,
+				6A11EC633034EA7D000E0A7A /* popup.css in Resources */,
+				6A11EC5F3034EA7D000E0A7A /* config.js in Resources */,
+				6A11EC603034EA7D000E0A7A /* icons in Resources */,
+				6A11EC613034EA7D000E0A7A /* manifest.json in Resources */,
+				6A11EC5D3034EA7D000E0A7A /* popup.js in Resources */,
+				6A11EC5E3034EA7D000E0A7A /* popup.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A11EC283034EA7C000E0A7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A11EC5B3034EA7D000E0A7A /* lib in Resources */,
+				6A11EC5C3034EA7D000E0A7A /* popup.css in Resources */,
+				6A11EC583034EA7D000E0A7A /* config.js in Resources */,
+				6A11EC593034EA7D000E0A7A /* icons in Resources */,
+				6A11EC5A3034EA7D000E0A7A /* manifest.json in Resources */,
+				6A11EC563034EA7D000E0A7A /* popup.js in Resources */,
+				6A11EC573034EA7D000E0A7A /* popup.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A11EBFE3034EA7C000E0A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A11EC383034EA7C000E0A7A /* ViewController.swift in Sources */,
+				6A11EC063034EA7C000E0A7A /* AppDelegate.swift in Sources */,
+				6A11EC083034EA7C000E0A7A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A11EC103034EA7C000E0A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A11EC393034EA7C000E0A7A /* ViewController.swift in Sources */,
+				6A11EC173034EA7C000E0A7A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A11EC1C3034EA7C000E0A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A11EC3C3034EA7C000E0A7A /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A11EC263034EA7C000E0A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A11EC3D3034EA7C000E0A7A /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A11EC233034EA7C000E0A7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A11EC1F3034EA7C000E0A7A /* Lystia Extension (iOS) */;
+			targetProxy = 6A11EC223034EA7C000E0A7A /* PBXContainerItemProxy */;
+		};
+		6A11EC2D3034EA7C000E0A7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A11EC293034EA7C000E0A7A /* Lystia Extension (macOS) */;
+			targetProxy = 6A11EC2C3034EA7C000E0A7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A11EBF53034EA7B000E0A7A /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A11EBF63034EA7B000E0A7A /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		6A11EC093034EA7C000E0A7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A11EC0A3034EA7C000E0A7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6A11EC0C3034EA7C000E0A7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A11EC0D3034EA7C000E0A7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A11EC183034EA7C000E0A7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A11EC193034EA7C000E0A7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A11EC3E3034EA7C000E0A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A11EC3F3034EA7C000E0A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		6A11EC413034EA7C000E0A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lystia Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bellots.lystia.browser-extension.Extension";
+				PRODUCT_NAME = "Lystia Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A11EC423034EA7C000E0A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lystia Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bellots.lystia.browser-extension.Extension";
+				PRODUCT_NAME = "Lystia Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A11EC453034EA7C000E0A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Lystia;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bellots.lystia.browser-extension";
+				PRODUCT_NAME = Lystia;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A11EC463034EA7C000E0A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Lystia;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bellots.lystia.browser-extension";
+				PRODUCT_NAME = Lystia;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A11EC483034EA7C000E0A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lystia Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bellots.lystia.browser-extension.Extension";
+				PRODUCT_NAME = "Lystia Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A11EC493034EA7C000E0A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lystia Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bellots.lystia.browser-extension.Extension";
+				PRODUCT_NAME = "Lystia Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6A11EC4C3034EA7C000E0A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Lystia;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bellots.lystia.browser-extension";
+				PRODUCT_NAME = Lystia;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A11EC4D3034EA7C000E0A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Lystia;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bellots.lystia.browser-extension";
+				PRODUCT_NAME = Lystia;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A11EBF23034EA7B000E0A7A /* Build configuration list for PBXProject "Lystia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A11EC3E3034EA7C000E0A7A /* Debug */,
+				6A11EC3F3034EA7C000E0A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A11EC403034EA7C000E0A7A /* Build configuration list for PBXNativeTarget "Lystia Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A11EC413034EA7C000E0A7A /* Debug */,
+				6A11EC423034EA7C000E0A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A11EC443034EA7C000E0A7A /* Build configuration list for PBXNativeTarget "Lystia (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A11EC453034EA7C000E0A7A /* Debug */,
+				6A11EC463034EA7C000E0A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A11EC473034EA7C000E0A7A /* Build configuration list for PBXNativeTarget "Lystia Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A11EC483034EA7C000E0A7A /* Debug */,
+				6A11EC493034EA7C000E0A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A11EC4B3034EA7C000E0A7A /* Build configuration list for PBXNativeTarget "Lystia (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A11EC4C3034EA7C000E0A7A /* Debug */,
+				6A11EC4D3034EA7C000E0A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A11EBEF3034EA7B000E0A7A /* Project object */;
+}

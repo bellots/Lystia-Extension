@@ -1,0 +1,14 @@
+{
+  "name": "lystia-extension",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs --origin http://localhost:3000",
+    "build:production": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs && node --test",
+    "package:chrome": "node scripts/package-chrome.mjs",
+    "package:safari": "sh scripts/package-safari.sh",
+    "sync:safari": "node scripts/sync-safari.mjs"
+  }
+}

@@ -1,0 +1,1 @@
+export const LYSTIA_WEB_ORIGIN = "http://localhost:3000";
