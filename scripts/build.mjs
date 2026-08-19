@@ -10,7 +10,7 @@ function requestedOrigin() {
   const originFlag = process.argv.indexOf("--origin");
   const raw = originFlag >= 0 ? process.argv[originFlag + 1] : process.env.LYSTIA_WEB_ORIGIN;
   if (!raw) {
-    throw new Error("Imposta LYSTIA_WEB_ORIGIN oppure usa --origin https://lystia.example");
+    throw new Error("Imposta LYSTIA_WEB_ORIGIN oppure usa --origin https://lystia.it");
   }
   const url = new URL(raw);
   if (!["http:", "https:"].includes(url.protocol) || url.pathname !== "/" || url.search || url.hash) {

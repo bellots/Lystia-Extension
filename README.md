@@ -35,15 +35,15 @@ npm run package:chrome
 
 ## Build di produzione
 
-Indica l’origine pubblica del frontend, senza path finale:
+La build di produzione usa l'origine pubblica definitiva del frontend:
 
 ```bash
-LYSTIA_WEB_ORIGIN=https://lystia.example npm run build:production
+npm run build:production
 ```
 
-L’estensione chiamerà gli endpoint attraverso `https://lystia.example/api/backend/*`. L’origine deve essere HTTPS, pubblicamente raggiungibile e configurata per inoltrare le richieste al Vapor server.
-
-Il frontend attualmente documentato nel repository è protetto da accesso owner-only e non è quindi adatto alla distribuzione pubblica dell’estensione finché non viene reso accessibile agli utenti Lystia.
+L’estensione chiamerà gli endpoint attraverso
+`https://lystia.it/api/backend/*`. Prima di impacchettarla, verificare che il
+sito pubblico e il relativo proxy verso Vapor siano raggiungibili.
 
 ## Safari
 

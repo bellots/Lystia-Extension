@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs --origin http://localhost:3000",
-    "build:production": "node scripts/build.mjs",
+    "build:production": "node scripts/build.mjs --origin https://lystia.it",
     "check": "node scripts/check.mjs && node --test",
     "package:chrome": "node scripts/package-chrome.mjs",
     "package:safari": "sh scripts/package-safari.sh",
