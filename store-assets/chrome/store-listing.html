@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lystia Chrome Web Store assets</title>
+    <style>
+      :root {
+        font-family: Inter, ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #1c2927;
+        background: #dcefeb;
+        --brand: #257b70;
+        --brand-dark: #16564f;
+        --brand-soft: #e8f5f1;
+        --line: #dce5e2;
+        --muted: #667572;
+        --yellow: #ffd75e;
+      }
+
+      * { box-sizing: border-box; }
+      html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+
+      .canvas {
+        position: relative;
+        width: 1280px;
+        height: 800px;
+        padding: 42px;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 12% 14%, rgb(255 215 94 / 42%), transparent 25%),
+          linear-gradient(135deg, #eff9f6 0%, #c7e8e2 100%);
+      }
+
+      .browser {
+        position: relative;
+        width: 1196px;
+        height: 716px;
+        overflow: hidden;
+        border: 1px solid rgb(22 86 79 / 16%);
+        border-radius: 24px;
+        background: #fff;
+        box-shadow: 0 28px 75px rgb(22 86 79 / 22%);
+      }
+
+      .browser-bar {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        gap: 16px;
+        padding: 0 18px;
+        border-bottom: 1px solid #e7eceb;
+        background: #f8faf9;
+      }
+
+      .traffic { display: flex; gap: 8px; }
+      .traffic span { width: 12px; height: 12px; border-radius: 50%; background: #d7dfdd; }
+      .traffic span:first-child { background: #ff8a78; }
+      .traffic span:nth-child(2) { background: #ffd56b; }
+      .traffic span:last-child { background: #67cca0; }
+
+      .address {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        height: 36px;
+        padding: 0 16px;
+        border-radius: 18px;
+        color: #71807d;
+        background: #eaf0ee;
+        font-size: 13px;
+      }
+
+      .toolbar-icon { width: 34px; height: 34px; border-radius: 9px; }
+
+      .shop-page {
+        display: grid;
+        grid-template-columns: 1.08fr .92fr;
+        gap: 54px;
+        height: calc(100% - 60px);
+        padding: 58px 68px;
+        background: linear-gradient(145deg, #fff 0 67%, #f4f8f7 67%);
+      }
+
+      .product-image {
+        position: relative;
+        display: grid;
+        place-items: center;
+        min-height: 480px;
+        border-radius: 28px;
+        background: #f1eee7;
+      }
+
+      .lamp {
+        position: relative;
+        width: 220px;
+        height: 340px;
+      }
+
+      .lamp-shade {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        width: 180px;
+        height: 132px;
+        border-radius: 90px 90px 34px 34px;
+        background: #ffcf56;
+        box-shadow: inset 0 -14px 0 rgb(179 112 30 / 12%);
+      }
+
+      .lamp-stem { position: absolute; top: 154px; left: 104px; width: 12px; height: 140px; border-radius: 8px; background: #275e59; }
+      .lamp-base { position: absolute; bottom: 28px; left: 50px; width: 120px; height: 26px; border-radius: 50%; background: #275e59; }
+
+      .product-copy { padding-top: 25px; }
+      .product-copy .kicker { color: var(--brand); font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+      .product-copy h1 { max-width: 420px; margin: 14px 0 18px; font-size: 44px; line-height: 1.06; letter-spacing: -.045em; }
+      .product-copy .price { margin: 0 0 26px; color: var(--brand-dark); font-size: 26px; font-weight: 800; }
+      .product-copy .body { max-width: 380px; color: #75827f; font-size: 16px; line-height: 1.55; }
+      .buy { width: 250px; margin-top: 28px; padding: 15px; border: 0; border-radius: 14px; color: #fff; background: #2b3432; font-weight: 800; }
+
+      .popup {
+        position: absolute;
+        top: 74px;
+        right: 58px;
+        width: 390px;
+        min-height: 300px;
+        overflow: hidden;
+        border: 1px solid rgb(28 41 39 / 12%);
+        border-radius: 18px;
+        background: #f6f8f7;
+        box-shadow: 0 24px 56px rgb(28 41 39 / 30%);
+      }
+
+      .topbar { display: flex; align-items: center; justify-content: space-between; min-height: 57px; padding: 11px 17px; border-bottom: 1px solid var(--line); background: #fff; }
+      .brand { display: flex; align-items: center; gap: 9px; }
+      .brand img { width: 32px; height: 32px; border-radius: 9px; }
+      .brand span { font-size: 22px; font-weight: 800; letter-spacing: -.045em; }
+      .exit { color: var(--brand); font-size: 12px; font-weight: 750; }
+      .view { padding: 18px; }
+      .page-context { display: flex; gap: 10px; align-items: center; padding-bottom: 12px; }
+      .page-favicon { display: grid; width: 22px; height: 22px; place-items: center; border-radius: 5px; color: #fff; background: #2b3432; font-size: 11px; font-weight: 900; }
+      .page-context p { max-width: 300px; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+      .host { color: var(--brand); font-size: 12px; font-weight: 800; }
+      .page-title { margin-top: 2px !important; color: var(--muted); font-size: 11px; }
+      .stack { display: grid; gap: 10px; }
+      label { display: grid; gap: 5px; text-align: left; }
+      label span { color: var(--brand-dark); font-size: 12px; font-weight: 750; }
+      input, .select, textarea { width: 100%; padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; color: #1c2927; background: #fff; font: inherit; font-size: 13px; }
+      textarea { height: 52px; resize: none; line-height: 1.35; }
+      .field-row { display: flex; gap: 10px; }
+      .field-row label:first-child { flex: 1; }
+      .currency { width: 94px; }
+      .primary { width: 100%; padding: 11px 15px; border: 0; border-radius: 12px; color: #fff; background: var(--brand); font-weight: 800; box-shadow: 0 5px 14px rgb(37 123 112 / 20%); }
+
+      .success { display: none; padding: 54px 28px 48px; text-align: center; }
+      .success-icon { display: grid; width: 56px; height: 56px; margin: 0 auto 16px; place-items: center; border-radius: 18px; color: #fff; background: var(--brand); font-size: 26px; font-weight: 900; }
+      .success h2 { margin: 0 0 8px; font-size: 25px; letter-spacing: -.025em; }
+      .success p { margin: 0 0 24px; color: var(--muted); line-height: 1.5; }
+
+      .caption {
+        position: absolute;
+        left: 76px;
+        bottom: 68px;
+        width: 505px;
+        padding: 23px 27px;
+        border-radius: 20px;
+        color: #fff;
+        background: rgb(22 86 79 / 94%);
+        box-shadow: 0 16px 36px rgb(22 86 79 / 22%);
+      }
+
+      .caption strong { display: block; margin-bottom: 7px; color: var(--yellow); font-size: 27px; letter-spacing: -.02em; }
+      .caption span { font-size: 15px; line-height: 1.45; }
+
+      body[data-screen="success"] .editor { display: none; }
+      body[data-screen="success"] .success { display: block; }
+      body[data-screen="success"] .popup { top: 135px; }
+      body[data-screen="success"] .caption strong::before { content: "Salvato nella wishlist"; font-size: 0; }
+
+      .promo {
+        display: none;
+        width: 440px;
+        height: 280px;
+        padding: 34px;
+        color: #fff;
+        background:
+          radial-gradient(circle at 88% 12%, rgb(255 215 94 / 26%), transparent 36%),
+          #33847e;
+      }
+
+      .promo img { width: 78px; height: 78px; border-radius: 21px; box-shadow: 0 12px 28px rgb(12 57 53 / 22%); }
+      .promo h1 { margin: 20px 0 7px; color: var(--yellow); font-size: 31px; line-height: 1; letter-spacing: -.045em; }
+      .promo p { width: 330px; margin: 0; font-size: 16px; line-height: 1.4; }
+
+      body[data-screen="promo"] { width: 440px; height: 280px; }
+      body[data-screen="promo"] .canvas { display: none; }
+      body[data-screen="promo"] .promo { display: block; }
+    </style>
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="browser">
+        <div class="browser-bar">
+          <div class="traffic"><span></span><span></span><span></span></div>
+          <div class="address">shop.example/prodotti/lampada-aurora</div>
+          <img class="toolbar-icon" src="../../src/icons/icon-32.png" alt="" />
+        </div>
+        <div class="shop-page">
+          <div class="product-image">
+            <div class="lamp"><div class="lamp-shade"></div><div class="lamp-stem"></div><div class="lamp-base"></div></div>
+          </div>
+          <div class="product-copy">
+            <div class="kicker">Casa Forma</div>
+            <h1>Lampada da tavolo Aurora</h1>
+            <p class="price">49,90 €</p>
+            <p class="body">Una luce calda e morbida per la scrivania o il comodino, con finitura verde opaca.</p>
+            <button class="buy">Aggiungi al carrello</button>
+          </div>
+        </div>
+
+        <aside class="popup">
+          <div class="topbar">
+            <div class="brand"><img src="../../src/icons/icon-32.png" alt="" /><span>lystia</span></div>
+            <div class="exit">Esci</div>
+          </div>
+          <div class="editor view">
+            <div class="page-context">
+              <div class="page-favicon">CF</div>
+              <div><p class="host">shop.example</p><p class="page-title">Lampada da tavolo Aurora</p></div>
+            </div>
+            <div class="stack">
+              <label><span>Wishlist</span><div class="select">Idee per casa</div></label>
+              <label><span>Nome del desiderio</span><input value="Lampada da tavolo Aurora" readonly /></label>
+              <div class="field-row">
+                <label><span>Prezzo</span><input value="49,90" readonly /></label>
+                <label class="currency"><span>Valuta</span><div class="select">EUR</div></label>
+              </div>
+              <label><span>Negozio</span><input value="Casa Forma" readonly /></label>
+              <label><span>Descrizione</span><textarea readonly>Luce da tavolo con finitura verde opaca.</textarea></label>
+              <button class="primary">Aggiungi alla wishlist</button>
+            </div>
+          </div>
+          <div class="success">
+            <div class="success-icon">✓</div>
+            <h2>Desiderio aggiunto</h2>
+            <p>Salvato in “Idee per casa”.</p>
+            <button class="primary">Fatto</button>
+          </div>
+        </aside>
+
+        <div class="caption">
+          <strong id="caption-title">Salva ciò che ami, mentre lo scopri</strong>
+          <span id="caption-body">Lystia importa automaticamente titolo, prezzo e negozio. Tu controlli e scegli la wishlist.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="promo">
+      <img src="../../src/icons/icon-128.png" alt="" />
+      <h1>Lystia</h1>
+      <p>Salva nella tua wishlist il prodotto che stai guardando.</p>
+    </div>
+
+    <script>
+      const screen = new URLSearchParams(location.search).get("screen") || "editor";
+      document.body.dataset.screen = screen;
+      if (screen === "success") {
+        document.getElementById("caption-title").textContent = "Un desiderio salvato in pochi secondi";
+        document.getElementById("caption-body").textContent = "Il prodotto viene aggiunto alla wishlist scelta, pronto per essere ritrovato e condiviso.";
+      }
+    </script>
+  </body>
+</html>

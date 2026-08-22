@@ -34,7 +34,7 @@ Passaggi:
 Il progetto universale contiene target macOS e iOS/iPadOS. In Xcode:
 
 1. selezionare il Team Apple Developer per tutti e quattro i target;
-2. verificare che gli identificativi `com.bellots.lystia.browser-extension*` siano disponibili;
+2. verificare che gli identificativi `com.bellots.lystia.safari` e `com.bellots.lystia.safari.extension` siano registrati per il Team Apple Developer;
 3. impostare versione e build in modo coerente con `manifest.json`;
 4. provare entrambe le app contenitore e abilitare l’estensione nelle impostazioni Safari;
 5. creare l’archive, caricarlo in App Store Connect e compilare privacy e metadata della scheda.

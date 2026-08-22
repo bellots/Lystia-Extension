@@ -55,7 +55,7 @@ npm run package:safari
 
 Il progetto Xcode universale è già presente in `Safari/Lystia/Lystia.xcodeproj`. Il comando aggiorna al suo interno le risorse dell’estensione con l’ultima build, senza modificare firma e impostazioni Apple. Se il progetto non esiste più, su Xcode 26 lo rigenera con Safari Web Extension Packager e su Xcode meno recente usa il converter. Configura Team e Bundle Identifier, quindi esegui l’app contenitore per provare l’estensione in Safari.
 
-Per distribuire l’estensione Safari occorrono firma Apple, una scheda App Store Connect e la relativa revisione. Il progetto usa il bundle identifier di base `com.bellots.lystia.browser-extension`; Xcode genera identificativi distinti per app ed estensioni macOS/iOS.
+Per distribuire l’estensione Safari occorrono firma Apple, una scheda App Store Connect e la relativa revisione. Il progetto usa `com.bellots.lystia.safari` per l’app contenitore e `com.bellots.lystia.safari.extension` per l’estensione Safari su macOS e iOS/iPadOS.
 
 ## Sicurezza e sessione
 

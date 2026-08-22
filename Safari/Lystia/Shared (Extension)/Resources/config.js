@@ -1,1 +1,1 @@
-export const LYSTIA_WEB_ORIGIN = "http://localhost:3000";
+export const LYSTIA_WEB_ORIGIN = "https://lystia.it";

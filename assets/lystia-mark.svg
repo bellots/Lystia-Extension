@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Lystia">
+  <rect width="24" height="24" rx="5.25" fill="#33847e"/>
+  <g fill="none" stroke="#ffd75e" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="4.25" y="9" width="15.5" height="3.5" rx="1"/>
+    <path d="M5.5 12.5v6.25a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V12.5M12 9v10.75M12 9H8.7a2.2 2.2 0 1 1 2.2-2.2C10.9 8.15 12 9 12 9Zm0 0h3.3a2.2 2.2 0 1 0-2.2-2.2C13.1 8.15 12 9 12 9Z"/>
+  </g>
+</svg>

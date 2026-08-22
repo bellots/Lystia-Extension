@@ -17,7 +17,7 @@ elif xcrun -f safari-web-extension-packager >/dev/null 2>&1; then
   xcrun safari-web-extension-packager "$SOURCE_DIR" \
     --project-location "$PROJECT_DIR/Safari" \
     --app-name Lystia \
-    --bundle-identifier com.bellots.lystia.browser-extension \
+    --bundle-identifier com.bellots.lystia.safari \
     --swift \
     --copy-resources \
     --no-open \

@@ -1,20 +1,34 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="it">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
-
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
     <link rel="stylesheet" href="../Style.css">
     <script src="../Script.js" defer></script>
 </head>
 <body>
-    <img src="../Icon.png" width="128" height="128" alt="Lystia Icon">
-    <p class="platform-ios">You can turn on Lystia’s Safari extension in Settings.</p>
-    <p class="platform-mac state-unknown">You can turn on Lystia’s extension in Safari Extensions preferences.</p>
-    <p class="platform-mac state-on">Lystia’s extension is currently on. You can turn it off in Safari Extensions preferences.</p>
-    <p class="platform-mac state-off">Lystia’s extension is currently off. You can turn it on in Safari Extensions preferences.</p>
-    <button class="platform-mac open-preferences">Quit and Open Safari Extensions Preferences…</button>
+    <main class="card">
+        <img class="app-icon" src="../Icon.png" width="128" height="128" alt="">
+        <p class="eyebrow">Estensione Safari</p>
+        <h1>Lystia per Safari</h1>
+
+        <div class="platform-ios">
+            <p class="intro">Salva nella tua wishlist il prodotto che stai guardando, senza cambiare app o copiare il link.</p>
+            <ol class="steps">
+                <li><span>1</span><p>Apri <strong>Impostazioni</strong>, cerca <strong>Safari</strong> e seleziona <strong>Estensioni</strong>.</p></li>
+                <li><span>2</span><p>Attiva <strong>Lystia</strong> e autorizzala quando richiesto.</p></li>
+                <li><span>3</span><p>Apri un prodotto in Safari e scegli Lystia dal menu delle estensioni.</p></li>
+            </ol>
+            <p class="footnote">L’estensione interviene soltanto quando decidi di aprirla.</p>
+        </div>
+
+        <div class="platform-mac">
+            <p class="state-unknown intro">Attiva Lystia nella sezione Estensioni delle impostazioni di Safari.</p>
+            <p class="state-on intro">L’estensione Lystia è attiva in Safari.</p>
+            <p class="state-off intro">L’estensione Lystia non è ancora attiva. Puoi abilitarla nelle impostazioni di Safari.</p>
+            <button class="open-preferences">Apri le impostazioni di Safari…</button>
+        </div>
+    </main>
 </body>
 </html>
