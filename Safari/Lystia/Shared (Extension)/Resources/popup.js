@@ -10,6 +10,10 @@ import {
 import { activeTab, openTab, storageGet, storageSet } from "./lib/web-extension.js";
 
 const LAST_WISHLIST_KEY = "lystia.lastWishlistID";
+const SLOW_IMPORT_MESSAGE_DELAY_MS = 8_000;
+const IMPORT_MESSAGE = "Importo i dettagli del prodotto…";
+const SLOW_IMPORT_MESSAGE =
+  "Alcuni negozi proteggono le pagine prodotto: in questi casi Lystia esegue un controllo aggiuntivo, quindi l’importazione può richiedere un po’ più di tempo. Grazie per la pazienza.";
 const elements = Object.fromEntries(
   [
     "loading-view",
@@ -31,6 +35,7 @@ const elements = Object.fromEntries(
     "page-host",
     "page-title",
     "import-status",
+    "import-status-text",
     "import-warning",
     "wish-form",
     "wishlist",
@@ -113,7 +118,11 @@ function renderImages(preview) {
 
 async function importCurrentProduct() {
   elements["import-status"].classList.remove("hidden");
+  elements["import-status-text"].textContent = IMPORT_MESSAGE;
   elements["import-warning"].classList.add("hidden");
+  const slowMessageTimer = window.setTimeout(() => {
+    elements["import-status-text"].textContent = SLOW_IMPORT_MESSAGE;
+  }, SLOW_IMPORT_MESSAGE_DELAY_MS);
   try {
     const preview = await api.previewProduct(currentPageUrl);
     fillFields(fieldsFromPreview(preview, currentPageUrl));
@@ -130,6 +139,7 @@ async function importCurrentProduct() {
     );
     elements["import-warning"].classList.remove("hidden");
   } finally {
+    window.clearTimeout(slowMessageTimer);
     elements["import-status"].classList.add("hidden");
   }
 }

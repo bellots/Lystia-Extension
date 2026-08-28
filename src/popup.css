@@ -92,6 +92,7 @@ textarea { resize: vertical; min-height: 70px; line-height: 1.4; }
 
 .text-button { border: 0; padding: 4px; color: var(--brand); background: transparent; font-size: 12px; font-weight: 750; }
 .account-links { display: flex; justify-content: space-between; margin-top: 15px; }
+.hint { margin: 14px 0 0; color: var(--muted); font-size: 12px; line-height: 1.45; text-align: center; }
 
 .error, .warning {
   margin: 0;

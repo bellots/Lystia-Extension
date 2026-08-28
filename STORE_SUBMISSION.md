@@ -31,6 +31,8 @@ Passaggi:
 
 ## App Store / Safari
 
+Nome della scheda App Store: `Lystia for Safari`. Il nome `Lystia` resta riservato alla futura app iOS nativa, che avrà un record App Store Connect e un Bundle ID separati. Nell'interfaccia dell'estensione il servizio continua a chiamarsi `Lystia`.
+
 Il progetto universale contiene target macOS e iOS/iPadOS. In Xcode:
 
 1. selezionare il Team Apple Developer per tutti e quattro i target;
