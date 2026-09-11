@@ -71,6 +71,7 @@ test("an expired access token is refreshed, rotated and retried", async () => {
       });
       return Response.json(newSession);
     }
+    assert.match(url, /api\/wishlists\/editable$/);
     assert.equal(options.headers.get("Authorization"), "Bearer new-access-token");
     return Response.json([{ id: "wishlist-1", title: "Regali" }]);
   };

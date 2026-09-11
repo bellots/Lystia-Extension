@@ -121,7 +121,7 @@ export const api = {
   },
 
   listWishlists() {
-    return request("/api/wishlists");
+    return request("/api/wishlists/editable");
   },
 
   previewProduct(url) {
